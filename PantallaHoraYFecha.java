@@ -1,11 +1,11 @@
 public class PantallaHoraYFecha
 {
  // Día del año
-    private int day;
+    private PantallaDosDigitos pantallaDays;
     // Mes del año
-    private int month;
+    private PantallaDosDigitos pantallaMonths;
     // Año
-    private int year;
+    private PantallaDosDigitos pantallaYears;
     // Pantalla horas
     private PantallaDosDigitos pantallaHoras;
     // Pantalla minutos
@@ -14,8 +14,8 @@ public class PantallaHoraYFecha
     public PantallaHoraYFecha() {
         pantallaHoras = new PantallaDosDigitos(0, 24);
         pantallaMinutos = new PantallaDosDigitos(0, 60);
-        day = 1;
-        month = 1;
-        year = 1;
+        pantallaDays = new PantallaDosDigitos (1, 31);
+        pantallaMonths = new PantallaDosDigitos (1, 13);
+        pantallaYears = new PantallaDosDigitos (1, 100);
     }
 }
